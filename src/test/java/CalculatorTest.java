@@ -31,6 +31,6 @@ public class CalculatorTest {
 
     @Test
     public void canDivide(){
-        assertEquals(5.25, calculator.divide(10.5, 2.0));
+        assertEquals(5.25, calculator.divide(10.5, 2.0), 0);
     }
 }

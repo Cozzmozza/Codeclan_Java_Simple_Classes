@@ -5,7 +5,7 @@ import static junit.framework.TestCase.assertEquals;
 
 public class WaterBottleTest {
 
-    WaterBottle waterBottle;
+    private WaterBottle waterBottle;
 
     @Before
     public void before(){
@@ -19,16 +19,19 @@ public class WaterBottleTest {
 
     @Test
     public void canDrink(){
-        assertEquals(90, waterBottle.drink());
+        waterBottle.drink();
+        assertEquals(90, waterBottle.getVolume());
     }
 
     @Test
     public void canEmpty(){
-        assertEquals(0, waterBottle.empty());
+        waterBottle.empty();
+        assertEquals(0, waterBottle.getVolume());
     }
 
     @Test
     public void canFill(){
-        assertEquals(100, waterBottle.fill());
+        waterBottle.fill();
+        assertEquals(100, waterBottle.getVolume());
     }
 }

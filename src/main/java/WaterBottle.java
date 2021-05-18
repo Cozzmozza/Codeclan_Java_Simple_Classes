@@ -16,17 +16,15 @@ public class WaterBottle {
         return volume;
     }
 
-    public int drink() {
-        return volume - 10;
+    public void drink() {
+        volume -= 10;
     }
 
-    public int empty() {
+    public void empty() {
         volume = 0;
-        return volume;
     }
 
-    public int fill() {
+    public void fill() {
         volume = 100;
-        return volume;
     }
 }
